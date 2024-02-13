@@ -15,11 +15,9 @@ function App() {
     return (
         <div className={styles.App}>
             <div className={styles.headerbar}>
+                <div className={styles.headerbar} />
                 <img src={Logo} alt="" className={styles.headerbar} />
-                <img
-                    src={Search}
-                    alt=""
-                />
+                <img src={Search} alt="" className={styles.headerbar} />
             </div>
             <div>
                 <div className={styles.boxitem} />
