@@ -1,3 +1,5 @@
+import { Swipeable } from 'react-swipeable';
+
 import './index.css';
 import { useState } from 'react';
 import classNames from 'classnames';
@@ -17,12 +19,16 @@ function App() {
             <div className={styles.headerbar}>
                 <div className={styles.headerbar} />
                 <img src={Logo} alt="" className={styles.headerbar} />
-                <img src={Search} alt="" className={styles.headerbar} width="25"/>
+                <img src={Search} alt="" className={styles.headerbar} width="25" />
             </div>
-            <div>
-                <div className={styles.boxitem} />
-                <div className={styles.boxitem} />
-            </div>
+            <ul>
+                <li>
+                    <img src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" alt="text" />
+                </li>
+                <li>
+                    <img src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" alt="text" />
+                </li>
+            </ul>
             <div>
                 <a href="https://vitejs.dev" target="_blank">
                     <ViteLogo
