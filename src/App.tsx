@@ -17,6 +17,9 @@ function App() {
                 <img src={Logo} alt="" />
             </div>
             <div>
+                <div className={styles.boxitem} />
+            </div>
+            <div>
                 <a href="https://vitejs.dev" target="_blank">
                     <ViteLogo
                         height="6em"
