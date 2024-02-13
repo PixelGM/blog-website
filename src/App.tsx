@@ -7,6 +7,7 @@ import { ReactComponent as TypescriptLogo } from './assets/typescript.svg';
 import { ReactComponent as ScssLogo } from './assets/scss.svg';
 import styles from './App.module.scss';
 import Logo from './assets/logo.png';
+import Search from './assets/search.svg';
 
 function App() {
     const [count, setCount] = useState(0);
@@ -14,9 +15,14 @@ function App() {
     return (
         <div className={styles.App}>
             <div className={styles.headerbar}>
-                <img src={Logo} alt="" />
+                <img src={Logo} alt="" className={styles.headerbar} />
+                <img
+                    src={Search}
+                    alt=""
+                />
             </div>
             <div>
+                <div className={styles.boxitem} />
                 <div className={styles.boxitem} />
             </div>
             <div>

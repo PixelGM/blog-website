@@ -53,8 +53,10 @@
 
 .headerbar {
     background-color: #0A141E;
-    display: block;
-    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .boxitem {
@@ -63,4 +65,12 @@
     padding: 1px 10px;
     margin: 0px;
     width: 25%;
+    overflow: auto;
+    position: relative;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
