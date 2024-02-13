@@ -1,4 +1,4 @@
-import { Swipeable } from 'react-swipeable';
+import Draggable from 'react-draggable';
 
 import './index.css';
 import { useState } from 'react';
@@ -21,14 +21,18 @@ function App() {
                 <img src={Logo} alt="" className={styles.headerbar} />
                 <img src={Search} alt="" className={styles.headerbar} width="25" />
             </div>
-            <ul>
-                <li>
-                    <img src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" alt="text" />
-                </li>
-                <li>
-                    <img src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" alt="text" />
-                </li>
-            </ul>
+            <div>
+                <Draggable axis="x">
+                    <ul style={{ display: 'flex', overflowX: 'auto', listStyle: 'none' }}>
+                        <li>
+                            <img src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" alt="text" />
+                        </li>
+                        <li>
+                            <img src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" alt="text" />
+                        </li>
+                    </ul>
+                </Draggable>
+            </div>
             <div>
                 <a href="https://vitejs.dev" target="_blank">
                     <ViteLogo
