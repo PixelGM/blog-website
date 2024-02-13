@@ -1,3 +1,4 @@
+import './index.css';
 import { useState } from 'react';
 import classNames from 'classnames';
 import { ReactComponent as ReactLogo } from './assets/react.svg';
@@ -5,12 +6,16 @@ import { ReactComponent as ViteLogo } from './assets/vite.svg';
 import { ReactComponent as TypescriptLogo } from './assets/typescript.svg';
 import { ReactComponent as ScssLogo } from './assets/scss.svg';
 import styles from './App.module.scss';
+import Logo from './assets/logo.png';
 
 function App() {
     const [count, setCount] = useState(0);
 
     return (
         <div className={styles.App}>
+            <div className={styles.headerbar}>
+                <img src={Logo} alt="" />
+            </div>
             <div>
                 <a href="https://vitejs.dev" target="_blank">
                     <ViteLogo
