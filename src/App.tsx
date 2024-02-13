@@ -17,7 +17,7 @@ function App() {
             <div className={styles.headerbar}>
                 <div className={styles.headerbar} />
                 <img src={Logo} alt="" className={styles.headerbar} />
-                <img src={Search} alt="" className={styles.headerbar} />
+                <img src={Search} alt="" className={styles.headerbar} width="25"/>
             </div>
             <div>
                 <div className={styles.boxitem} />
