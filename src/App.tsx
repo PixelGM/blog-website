@@ -21,14 +21,36 @@ function App() {
                 <img src={Logo} alt="" className={styles.headerbar} />
                 <img src={Search} alt="" className={styles.headerbar} width="25" />
             </div>
-            <div>
-                <Draggable axis="x">
+            <div className={styles.LatestArticlesBar}>
+                <Draggable axis="x" bounds={{ left: 0, right: 0 }}>
                     <ul style={{ display: 'flex', overflowX: 'auto', listStyle: 'none' }}>
-                        <li>
-                            <img src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" alt="text" />
+                        <li className={styles.Draggable}>
+                            <img
+                                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                alt="text"
+                                draggable="false"
+                            />
                         </li>
-                        <li>
-                            <img src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" alt="text" />
+                        <li className={styles.Draggable}>
+                            <img
+                                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                alt="text"
+                                draggable="false"
+                            />
+                        </li>
+                        <li className={styles.Draggable}>
+                            <img
+                                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                alt="text"
+                                draggable="false"
+                            />
+                        </li>
+                        <li className={styles.Draggable}>
+                            <img
+                                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                alt="text"
+                                draggable="false"
+                            />
                         </li>
                     </ul>
                 </Draggable>
