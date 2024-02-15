@@ -100,12 +100,24 @@
     align-content: start;
     justify-content: center;
     list-style: none;
+    gap: 10px;
 }
 
-/* Manages the images inside (think of it of managing an array) */
-.images img {
-    margin: 10px;
-    /* Adjust as needed */
+/* @media */
+@media (max-width: 1388px) {
+    .images img {
+        max-width: 20vw;
+    }
+}
+@media (max-width: 1000px) {
+    .images img {
+        max-width: 40vw;
+    }
+}
+@media (max-width: 650px) {
+    .images img {
+        max-width: 60vw;
+    }
 }
 
 .middle {
