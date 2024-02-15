@@ -1,5 +1,3 @@
-import Draggable from 'react-draggable';
-
 import './index.css';
 import { useState } from 'react';
 import classNames from 'classnames';
@@ -28,7 +26,6 @@ function App() {
                 <div className={styles.LatestArticlesBar}>
                     <div className={styles.rectangle} />
                     <div className={styles.LatestArticlesPics}>
-                        <Draggable axis="x" bounds={{ left: 0, right: 0 }}>
                             <ul style={{ display: 'flex', overflowX: 'auto', listStyle: 'none' }}>
                                 <li className={styles.Draggable}>
                                     <img
@@ -59,7 +56,6 @@ function App() {
                                     />
                                 </li>
                             </ul>
-                        </Draggable>
                     </div>
                 </div>
                 <div>
