@@ -82,7 +82,7 @@
     margin-right: 25px;
 }
 
-.LatestArticlesBar {
+.LatestArticlesPics {
     background-color: #ffffff;
     padding-left: 0px;
     display: flex;
@@ -100,40 +100,40 @@
     /* This will make the rectangle rounded */
 }
 
-@media (max-width: 1366px) {
-    .App {
-        /* Styles for screens 1024px and up go here */
-    }
+// @media (max-width: 1366px) {
+//     .App {
+//         /* Styles for screens 1024px and up go here */
+//     }
 
-    .rectangle {
-        margin: 3% 0% 1% 17vw;
-    }
-}
+//     .rectangle {
+//         margin: 3% 0% 1% 17vw;
+//     }
+// }
 
-@media (max-width: 1024px) {
-    .App {
-        /* Styles for screens 1024px and up go here */
-    }
+// @media (max-width: 1024px) {
+//     .App {
+//         /* Styles for screens 1024px and up go here */
+//     }
 
-    .rectangle {
-        margin: 3% 0% 1% 38 vw;
-    }
-}
+//     .rectangle {
+//         margin: 3% 0% 1% 38 vw;
+//     }
+// }
 
-@media (max-width: 1280px) {
-    .App {
-        /* Styles for screens 1280px and up go here */
-    }
-}
+// @media (max-width: 1280px) {
+//     .App {
+//         /* Styles for screens 1280px and up go here */
+//     }
+// }
 
-@media (max-width: 1440px) {
-    .App {
-        /* Styles for screens 1440px and up go here */
-    }
-}
+// @media (max-width: 1440px) {
+//     .App {
+//         /* Styles for screens 1440px and up go here */
+//     }
+// }
 
-@media (max-width: 1920px) {
-    .App {
-        /* Styles for screens 1920px and up go here */
-    }
-}
+// @media (max-width: 1920px) {
+//     .App {
+//         /* Styles for screens 1920px and up go here */
+//     }
+// }.LatestArticlesBar {}

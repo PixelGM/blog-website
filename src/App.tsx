@@ -15,45 +15,52 @@ function App() {
     const [count, setCount] = useState(0);
 
     return (
-        <><head>
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-        </head>
-        <div className={styles.App}>
+        <>
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+            </head>
+            <div className={styles.App}>
                 <div className={styles.headerbar}>
                     <div className={styles.headerbar} />
                     <img src={Logo} alt="" className={styles.headerbar} />
                     <img src={Search} alt="" className={styles.headerbar} width="25" />
                 </div>
-                <div className={styles.rectangle} />
                 <div className={styles.LatestArticlesBar}>
-                    <Draggable axis="x" bounds={{ left: 0, right: 0 }}>
-                        <ul style={{ display: 'flex', overflowX: 'auto', listStyle: 'none' }}>
-                            <li className={styles.Draggable}>
-                                <img
-                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                                    alt="text"
-                                    draggable="false" />
-                            </li>
-                            <li className={styles.Draggable}>
-                                <img
-                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                                    alt="text"
-                                    draggable="false" />
-                            </li>
-                            <li className={styles.Draggable}>
-                                <img
-                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                                    alt="text"
-                                    draggable="false" />
-                            </li>
-                            <li className={styles.Draggable}>
-                                <img
-                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                                    alt="text"
-                                    draggable="false" />
-                            </li>
-                        </ul>
-                    </Draggable>
+                    <div className={styles.rectangle} />
+                    <div className={styles.LatestArticlesPics}>
+                        <Draggable axis="x" bounds={{ left: 0, right: 0 }}>
+                            <ul style={{ display: 'flex', overflowX: 'auto', listStyle: 'none' }}>
+                                <li className={styles.Draggable}>
+                                    <img
+                                        src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                        alt="text"
+                                        draggable="false"
+                                    />
+                                </li>
+                                <li className={styles.Draggable}>
+                                    <img
+                                        src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                        alt="text"
+                                        draggable="false"
+                                    />
+                                </li>
+                                <li className={styles.Draggable}>
+                                    <img
+                                        src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                        alt="text"
+                                        draggable="false"
+                                    />
+                                </li>
+                                <li className={styles.Draggable}>
+                                    <img
+                                        src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                        alt="text"
+                                        draggable="false"
+                                    />
+                                </li>
+                            </ul>
+                        </Draggable>
+                    </div>
                 </div>
                 <div>
                     <a href="https://vitejs.dev" target="_blank">
@@ -61,28 +68,32 @@ function App() {
                             height="6em"
                             width="6em"
                             className={classNames(styles.logo)}
-                            title="Vite logo" />
+                            title="Vite logo"
+                        />
                     </a>
                     <a href="https://reactjs.org" target="_blank">
                         <ReactLogo
                             height="6em"
                             width="6em"
                             className={classNames(styles.logo, styles.react)}
-                            title="React logo" />
+                            title="React logo"
+                        />
                     </a>
                     <a href="https://www.typescriptlang.org/" target="_blank">
                         <TypescriptLogo
                             height="6em"
                             width="6em"
                             className={classNames(styles.logo, styles.ts)}
-                            title="Typescript logo" />
+                            title="Typescript logo"
+                        />
                     </a>
                     <a href="https://sass-lang.com/" target="_blank">
                         <ScssLogo
                             height="6em"
                             width="6em"
                             className={classNames(styles.logo, styles.scss)}
-                            title="SCSS logo" />
+                            title="SCSS logo"
+                        />
                     </a>
                 </div>
                 <div className={styles.card}>
@@ -94,7 +105,8 @@ function App() {
                 <p className={styles['read-the-docs']}>
                     Click on the Vite and React logos to learn more
                 </p>
-            </div></>
+            </div>
+        </>
     );
 }
 
