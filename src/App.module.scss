@@ -86,11 +86,9 @@
 
 .rectangle {
     height: 5vh;
-    /* Adjust as needed */
     width: 10vw;
-    /* Adjust as needed */
     background-color: #0A141E;
-    margin: 3vh 0 1vh 6.8vw;
+    margin: 3vh 0 1vh 8vw;
     border-radius: 5px;
     /* This will make the rectangle rounded */
 }
@@ -104,5 +102,6 @@
 }
 
 .images img {
-    margin: 10px; /* Adjust as needed */
+    margin: 10px;
+    /* Adjust as needed */
 }
