@@ -97,3 +97,27 @@
     border-radius: 5px;
     /* This will make the rectangle rounded */
 }
+
+@media (min-width: 1024px) {
+    .App {
+        /* Styles for screens 1024px and up go here */
+    }
+}
+
+@media (min-width: 1280px) {
+    .App {
+        /* Styles for screens 1280px and up go here */
+    }
+}
+
+@media (min-width: 1440px) {
+    .App {
+        /* Styles for screens 1440px and up go here */
+    }
+}
+
+@media (min-width: 1920px) {
+    .App {
+        /* Styles for screens 1920px and up go here */
+    }
+}
