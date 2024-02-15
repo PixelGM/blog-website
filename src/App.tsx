@@ -59,6 +59,7 @@ function App() {
                         </li>
                     </ul>
                 </div>
+                <div className={classNames(styles.rectangle, styles.middle)} />
                 <div>
                     <a href="https://vitejs.dev" target="_blank">
                         <ViteLogo

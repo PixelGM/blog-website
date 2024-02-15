@@ -105,3 +105,15 @@
     margin: 10px;
     /* Adjust as needed */
 }
+
+.middle {
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    margin-left: 0vw;
+}
