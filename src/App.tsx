@@ -21,6 +21,7 @@ function App() {
                 <img src={Logo} alt="" className={styles.headerbar} />
                 <img src={Search} alt="" className={styles.headerbar} width="25" />
             </div>
+            <div className={styles.rectangle} />
             <div className={styles.LatestArticlesBar}>
                 <Draggable axis="x" bounds={{ left: 0, right: 0 }}>
                     <ul style={{ display: 'flex', overflowX: 'auto', listStyle: 'none' }}>
