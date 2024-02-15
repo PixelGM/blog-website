@@ -96,11 +96,12 @@
 .images {
     display: flex;
     flex-wrap: wrap;
-    align-content: start;
-    justify-content: space-around;
     align-items: center;
+    align-content: start;
+    justify-content: center;
 }
 
+/* Manages the images inside (think of it of managing an array) */
 .images img {
     margin: 10px;
     /* Adjust as needed */
