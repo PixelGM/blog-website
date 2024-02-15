@@ -25,10 +25,7 @@ function App() {
                 </div>
                 <div className={styles.rectangle} />
                 <div className={styles.LatestArticlesPics}>
-                    <ul
-                        style={{ display: 'flex', overflowX: 'auto', listStyle: 'none' }}
-                        className={styles.images}
-                    >
+                    <ul className={styles.images}>
                         <li>
                             <img
                                 src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
