@@ -103,25 +103,6 @@
     gap: 10px;
 }
 
-/* @media */
-@media (max-width: 1388px) {
-    .images img {
-        max-width: 20vw;
-    }
-}
-
-@media (max-width: 1000px) {
-    .images img {
-        max-width: 40vw;
-    }
-}
-
-@media (max-width: 650px) {
-    .images img {
-        max-width: 60vw;
-    }
-}
-
 .middle {
     display: inline-block;
     flex-direction: row;
