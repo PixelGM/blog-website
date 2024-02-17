@@ -23,40 +23,42 @@ function App() {
                     <img src={Logo} alt="" className={styles.headerbar} />
                     <img src={Search} alt="" className={styles.headerbar} width="25" />
                 </div>
-                <div className={styles.rectangle} />
-                <div className={styles.LatestArticlesPics}>
-                    <ul className={styles.images}>
-                        <li>
-                            <img
-                                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                                alt="text"
-                                draggable="false"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                                alt="text"
-                                draggable="false"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                                alt="text"
-                                draggable="false"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                                alt="text"
-                                draggable="false"
-                            />
-                        </li>
-                    </ul>
+                <div className={styles.LatestArticleSection}>
+                    <div className={styles.rectangle} />
+                    <div className={styles.LatestArticlesPics}>
+                        <ul className={styles.images}>
+                            <li>
+                                <img
+                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                    alt="text"
+                                    draggable="false"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                    alt="text"
+                                    draggable="false"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                    alt="text"
+                                    draggable="false"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                    alt="text"
+                                    draggable="false"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={classNames(styles.rectangle, styles.middle)} />
                 </div>
-                <div className={classNames(styles.rectangle, styles.middle)} />
                 <div>
                     <a href="https://vitejs.dev" target="_blank">
                         <ViteLogo

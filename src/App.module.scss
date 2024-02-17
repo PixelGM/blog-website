@@ -109,11 +109,13 @@
         max-width: 20vw;
     }
 }
+
 @media (max-width: 1000px) {
     .images img {
         max-width: 40vw;
     }
 }
+
 @media (max-width: 650px) {
     .images img {
         max-width: 60vw;
@@ -130,4 +132,8 @@
     margin-top: 0vh;
     margin-bottom: 0vh;
     margin-left: 0vw;
+}
+
+.LatestArticleSection {
+    margin-bottom: 3vh;
 }
