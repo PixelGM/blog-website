@@ -23,7 +23,7 @@ function App() {
                     <img src={Logo} alt="" className={styles.headerbar} />
                     <img src={Search} alt="" className={styles.headerbar} width="25" />
                 </div>
-                <div className={styles.LatestArticleSection}>
+                <div className={styles.Content}>
                     <div className={styles.rectangle} />
                     <ul className={styles.images}>
                         <li>
@@ -58,7 +58,10 @@ function App() {
                     <div className={styles.LatestArticlesPics}></div>
                     <div className={classNames(styles.rectangle, styles.middle)} />
                 </div>
-                <h1>Heading 1</h1>
+                <div className={styles.Content}>
+                    <h1>Heading 1</h1>
+                </div>
+                <h1></h1>
                 <div>
                     <a href="https://vitejs.dev" target="_blank">
                         <ViteLogo

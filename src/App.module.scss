@@ -88,7 +88,7 @@
     height: 5vh;
     width: 10vw;
     background-color: #0A141E;
-    margin: 3vh 0 1vh 8vw;
+    margin: 3vh 0 1vh 0vw;
     border-radius: 5px;
     /* This will make the rectangle rounded */
 }
@@ -101,6 +101,7 @@
     list-style: none;
     gap: 10px;
     justify-content: center;
+    padding: 0px;
 }
 
 .middle {
@@ -115,13 +116,14 @@
     margin-left: 0vw;
 }
 
-.LatestArticleSection {
+.Content {
     margin-bottom: 3vh;
+    padding: 0px;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 h1 {
-    margin: 0 0 0 8.5vw;
-    padding: 0;
     text-align: start;
     font-size: calc(12px + 2.2vw);
 }
