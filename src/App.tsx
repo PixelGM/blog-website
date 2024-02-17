@@ -25,38 +25,37 @@ function App() {
                 </div>
                 <div className={styles.LatestArticleSection}>
                     <div className={styles.rectangle} />
-                    <div className={styles.LatestArticlesPics}>
-                        <ul className={styles.images}>
-                            <li>
-                                <img
-                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                                    alt="text"
-                                    draggable="false"
-                                />
-                            </li>
-                            <li>
-                                <img
-                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                                    alt="text"
-                                    draggable="false"
-                                />
-                            </li>
-                            <li>
-                                <img
-                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                                    alt="text"
-                                    draggable="false"
-                                />
-                            </li>
-                            <li>
-                                <img
-                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                                    alt="text"
-                                    draggable="false"
-                                />
-                            </li>
-                        </ul>
-                    </div>
+                    <ul className={styles.images}>
+                        <li>
+                            <img
+                                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                alt="text"
+                                draggable="false"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                alt="text"
+                                draggable="false"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                alt="text"
+                                draggable="false"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                alt="text"
+                                draggable="false"
+                            />
+                        </li>
+                    </ul>
+                    <div className={styles.LatestArticlesPics}></div>
                     <div className={classNames(styles.rectangle, styles.middle)} />
                 </div>
                 <h1>Heading 1</h1>
