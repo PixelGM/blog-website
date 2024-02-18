@@ -118,7 +118,7 @@ function App() {
                     Click on the Vite and React logos to learn more
                 </p>
             </div>
-            <h1>FEATURED ARTICLES</h1>
+            <h1></h1>
         </>
     );
 }
