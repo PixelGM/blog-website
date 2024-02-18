@@ -8,6 +8,8 @@ import { ReactComponent as ScssLogo } from './assets/scss.svg';
 import styles from './App.module.scss';
 import Logo from './assets/logo.png';
 import Search from './assets/search.svg';
+import Wallpaper169 from './assets/wallpaper169.jpg';
+import Wallpaper11 from './assets/wallpaper11.jpg';
 
 function App() {
     const [count, setCount] = useState(0);
@@ -29,7 +31,7 @@ function App() {
                         <li>
                             <div className={styles.ImagesContent}>
                                 <img
-                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                    src={Wallpaper169}
                                     alt="text"
                                     draggable="false"
                                 />
@@ -39,7 +41,7 @@ function App() {
                         <li>
                             <div className={styles.ImagesContent}>
                                 <img
-                                    src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                                    src={Wallpaper11}
                                     alt="text"
                                     draggable="false"
                                 />
