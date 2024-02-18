@@ -59,7 +59,7 @@ function App() {
                     <div className={classNames(styles.rectangle, styles.middle)} />
                 </div>
                 <div className={styles.Content}>
-                    <h1>Heading 1</h1>
+                    <h1>FEATURED ARTICLES</h1>
                 </div>
                 <h1></h1>
                 <div>
