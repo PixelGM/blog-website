@@ -16,22 +16,28 @@ function WordPressPost() {
     const [postContent, setPostContent] = useState('');
 
     useEffect(() => {
-        // Define a function that fetches the latest post content
         const fetchPostContent = () => {
             axios.get('http://localhost/wordpress/wp-json/wp/v2/posts')
                 .then(response => {
                     const content = response.data[0].content.rendered;
                     const plainTextContent = content.replace(/<\/?[^>]+(>|$)/g, "");
+
+                    // Save the fetched data to localStorage
+                    localStorage.setItem('postContent', plainTextContent);
+
                     setPostContent(plainTextContent);
                 });
         };
 
-        // Fetch the latest post content immediately
+        // Try to load the data from localStorage
+        const cachedPostContent = localStorage.getItem('postContent');
+        if (cachedPostContent) {
+            setPostContent(cachedPostContent);
+        }
+
         fetchPostContent();
-        // Then fetch the latest post content every 5 seconds
         const intervalId = setInterval(fetchPostContent, 5000);
 
-        // Clean up the interval when the component is unmounted
         return () => clearInterval(intervalId);
     }, []);
 
