@@ -17,7 +17,7 @@ function WordPressPost() {
 
     useEffect(() => {
         const fetchPostContent = () => {
-            axios.get('http://localhost/wordpress/wp-json/wp/v2/posts')
+            axios.get('http://pixelsbackend.elementfx.com/wordpress/wp-json/wp/v2/posts')
                 .then(response => {
                     const content = response.data[0].content.rendered;
                     const plainTextContent = content.replace(/<\/?[^>]+(>|$)/g, "");
