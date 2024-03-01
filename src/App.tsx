@@ -1,5 +1,6 @@
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './index.css';
-import { useState } from 'react';
 import classNames from 'classnames';
 import { ReactComponent as ReactLogo } from './assets/react.svg';
 import { ReactComponent as ViteLogo } from './assets/vite.svg';
@@ -10,6 +11,31 @@ import Logo from './assets/logo.png';
 import Search from './assets/search.svg';
 import Wallpaper169 from './assets/wallpaper169.jpg';
 import Wallpaper11 from './assets/wallpaper11.jpg';
+
+function WordPressPost() {
+    const [postContent, setPostContent] = useState('');
+
+    useEffect(() => {
+        axios.get('http://localhost/wordpress/wp-json/wp/v2/posts')
+            .then(response => {
+                // Extract the content from the first post in the response
+                const content = response.data[0].content.rendered;
+                // Remove HTML tags from the content
+                const plainTextContent = content.replace(/<\/?[^>]+(>|$)/g, "");
+                setPostContent(plainTextContent);
+            });
+    }, []);
+
+    if (!postContent) {
+        return <div>Loading...</div>;
+    }
+
+    return (
+        <div>
+            <p>{postContent}</p>
+        </div>
+    );
+}
 
 function App() {
     const [count, setCount] = useState(0);
@@ -74,6 +100,7 @@ function App() {
                 </div>
                 <div className={styles.Content}>
                     <h1>FEATURED ARTICLES</h1>
+                    <WordPressPost />
                 </div>
                 <h1></h1>
                 <div>
